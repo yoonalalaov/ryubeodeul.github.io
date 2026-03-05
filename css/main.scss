@@ -21,8 +21,9 @@ body {
                 padding: 0 0 1em;
 
                 strong {
-                    font-size: clamp(60px, 12.5vw, 232px);
+                    font-size: clamp(30px, 12.5vw, 232px);
                     font-weight: 400;
+                    text-indent: -.11em;
 
                     white-space: nowrap;
                     line-height: 0.8;
@@ -107,6 +108,7 @@ body {
             padding: .2em 0;
 
             .swiper-wrapper {
+                width: 2000px;
 
                 transition-timing-function: linear !important;
             }
@@ -149,4 +151,58 @@ body {
     }
 
 
+}
+
+
+@media(max-width: 1200px) {
+
+
+    #main #picture .picture__swiper .swiper-slide {
+        width: 300px;
+    }
+
+    #main #picture .picture__swiper .swioer-wrapper {
+        width: 100vw;
+    }
+
+    #main #visual .visual__bot__txt {
+        width: 78%;
+    }
+
+}
+
+
+@media(max-width: 1100px) {
+
+    #main {
+        font-size: 1.6vw;
+    }
+
+    #main #visual .visual__fix h2 > span:nth-child(3) {
+        left: 35%;
+    }
+
+    #main #visual .visual__fix h2 > span:nth-child(4) {
+        left: 52%;
+    }
+
+    #main #visual .visual__fix h2 > span:nth-child(5) {
+        left: 62%;
+    }
+
+    #main #visual .visual__fix h2 > span {
+        font-size: 1.6vw;
+    }
+
+    #main #visual .visual__mid__txt,
+    #main #last .last__txt {
+        font-size: 2vw;
+    }
+
+}
+
+@media(max-width: 800px) {
+    #main #picture .picture__swiper .swiper-slide {
+        width: 33vw;
+    }
 }
