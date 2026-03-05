@@ -91,7 +91,7 @@ body {
   font-size: 22px;
   line-height: 1.3;
 }
-#main #last .last__txt p:not(:last-child) {
+#main #last .last__txt p {
   margin-bottom: 0.3em;
 }
 
