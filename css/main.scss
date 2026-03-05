@@ -1,23 +1,18 @@
 body {
-    background: #161614;
-    color: #fff;
+    background: #fff;
 }
 
 #main {
 
     display: block;
 
-    font-size: 20px;
+    font-size: 18px;
 
 
     #visual {
 
         .visual__fix {
-            position: sticky;
-            left: 0;
-            top: 0;
-
-            background: #161614;
+            background: #fff;
 
             z-index: 1;
 
@@ -26,22 +21,28 @@ body {
                 padding: 0 0 1em;
 
                 strong {
-                    font-size: clamp(60px, 13.9vw, 232px);
+                    font-size: clamp(60px, 12.5vw, 232px);
+                    font-weight: 400;
+
                     white-space: nowrap;
                     line-height: 0.8;
                     display: block;
                     letter-spacing: clamp(-12px, -.8vw, 12px);
                     text-align: center;
+
+                    span {
+                    }
+
                 }
 
-                span {
+                & > span {
                     position: absolute;
                     bottom: 0;
 
                     opacity: .8;
                     font-weight: 400;
 
-                    font-size: 22px;
+                    font-size: 18px;
 
                     &:nth-child(2) {
                         left: 0;
@@ -67,7 +68,7 @@ body {
 
 
         .visual__mid__txt {
-            font-size: 28px;
+            font-size: 22px;
             line-height: 1.3;
 
             padding: 3em 0 1em;
@@ -112,7 +113,6 @@ body {
 
             .swiper-slide {
                 width: 400px;
-                height: 400px;
 
                 margin: 0 5px;
                 
@@ -127,6 +127,23 @@ body {
                 }
             }
 
+        }
+
+    }
+
+    #last {
+        padding: 6em 0 12em;
+
+        .last__txt {
+            padding-left: 25%;
+            padding-right: 1%;
+
+            font-size: 22px;
+            line-height: 1.3;
+
+            p:not(:last-child) {
+                margin-bottom: .3em;
+            }
         }
 
     }
